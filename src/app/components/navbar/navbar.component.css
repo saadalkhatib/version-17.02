@@ -1,0 +1,35 @@
+.navbar {
+  border-radius: 50px !important;
+}
+
+.navbar-brand img {
+  border-radius: 50%;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.language-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  right: 0;
+  left: auto;
+  top: 100%;
+}
+
+.navbar-brand img {
+  border-radius: 60%;
+  height: 70px;  /* Größerer Wert für mehr Sichtbarkeit */
+  margin-right: 10px;
+}
+
+
+.bi-globe {
+  color: white;
+  cursor: pointer;
+}

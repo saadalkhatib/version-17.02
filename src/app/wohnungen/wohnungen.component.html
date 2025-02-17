@@ -1,0 +1,42 @@
+<section class="filter-bar d-flex align-items-center justify-content-between">
+  <label for="priceRange" class="me-3">{{ 'MAX_RENT' | translate }}</label>
+  <input
+    type="range"
+    id="priceRange"
+    min="0"
+    max="3000"
+    step="50"
+    [value]="maxMiete"
+    (input)="updateMaxMiete($event)"
+    class="form-range"
+    style="width: 200px;"
+  />
+  <span>{{ 'MAX_PRICE' | translate }} {{ maxMiete }} €</span>
+</section>
+
+<div class="container mt-5">
+  <h1 class="text-center text-success">{{ 'HOUSING_TITLE' | translate }}</h1>
+  <div class="row">
+    <div class="col-md-4" *ngFor="let angebot of gefilterteAngebote">
+      <div class="card mb-4">
+        <img [src]="angebot.bild" class="card-img-top" alt="{{ 'HOUSING_IMAGE' | translate }}" />
+        <div class="card-body">
+          <h5 class="card-title">{{ angebot.titel }}</h5>
+          <p class="card-text">{{ angebot.beschreibung }}</p>
+          <p class="card-text"><strong>{{ 'PRICE' | translate }}:</strong> {{ angebot.preis }} €/Monat</p>
+          <a [href]="angebot.link" class="btn btn-primary">{{ 'DETAILS_BUTTON' | translate }}</a>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="gefilterteAngebote.length === 0" class="text-center mt-4">
+      <p class="text-danger">{{ 'NO_OFFERS_FOUND' | translate }}</p>
+    </div>
+  </div>
+</div>
+
+<section class="mt-5">
+  <h2 class="text-center">{{ 'MAP_TITLE' | translate }}</h2>
+  
+  <!-- Das Map-Component kümmert sich jetzt um die Suche -->
+  <app-map [angebote]="angebote"></app-map>
+</section>

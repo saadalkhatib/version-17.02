@@ -1,0 +1,14 @@
+<div class="map-container">
+  <div class="search-bar d-flex justify-content-center">
+    <input 
+      type="text" 
+      class="form-control me-2" 
+      placeholder="{{ 'SEARCH_PLACEHOLDER' | translate }}" 
+      #addressInput
+    />
+    <button class="btn btn-primary" (click)="searchAddress(addressInput.value)">
+      {{ 'SEARCH_BUTTON' | translate }}
+    </button>
+  </div>
+  <div id="map" style="height: 500px; width: 100%;"></div>
+</div>

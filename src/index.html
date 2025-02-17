@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="assets\images\logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Meta-Angaben -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wohnplattform</title>
+  <base href="/">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css"> <!-- Leaflet CSS -->
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Zusätzliche Styles -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      z-index: 1000; /* Stellt sicher, dass die Navigationsebene immer sichtbar ist */
+    }
+  </style>
+</head>
+<body>
+  <app-root></app-root>
+
+  <!-- JavaScript-Bibliotheken -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="node_modules/leaflet/dist/leaflet.js"></script> <!-- Leaflet JS -->
+
+  <!-- Fix für initiales Laden der Seite -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      window.dispatchEvent(new Event('resize')); // Löst ein Resize-Event aus, um sicherzustellen, dass das Layout korrekt dargestellt wird.
+    });
+  </script>
+</body>
+</html>

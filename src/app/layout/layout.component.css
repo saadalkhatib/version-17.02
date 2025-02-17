@@ -1,0 +1,27 @@
+/* Styling für die weiße Box (Zentrieren verbessern) */
+#map {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 800px; /* Maximale Breite */
+  height: auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center; /* Bild horizontal zentrieren */
+  align-items: center; /* Bild vertikal zentrieren (falls nötig) */
+  padding: 20px; /* Innenabstand für schönes Design */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Bild innerhalb der Box zentrieren */
+#map img {
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+

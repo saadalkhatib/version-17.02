@@ -1,0 +1,44 @@
+<div class="container mt-5">
+  <!-- Titel -->
+  <h1 class="text-center text-info mb-4">{{ 'ABOUT_US_TITLE' | translate }}</h1>
+
+  <!-- Einführung -->
+  <p class="text-center lead">{{ 'ABOUT_US_INTRO' | translate }}</p>
+
+  <!-- Mission -->
+  <div class="row my-5">
+    <div class="col-md-6">
+      <img src="/assets/images/mission-bild.jpg" alt="Mission Bild" class="img-fluid rounded shadow">
+    </div>
+    <div class="col-md-6 d-flex flex-column justify-content-center">
+      <h3 class="text-info">{{ 'OUR_MISSION_TITLE' | translate }}</h3>
+      <p>{{ 'OUR_MISSION_TEXT' | translate }}</p>
+    </div>
+  </div>
+
+  <!-- Team -->
+  <div class="my-5">
+    <h3 class="text-center text-info mb-4">{{ 'OUR_TEAM_TITLE' | translate }}</h3>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <h5>{{ 'TEAM_MEMBER_1' | translate }}</h5>
+        <p>{{ 'TEAM_MEMBER_ROLE_1' | translate }}</p>
+      </div>
+      <div class="col-md-4">
+        <h5>{{ 'TEAM_MEMBER_2' | translate }}</h5>
+        <p>{{ 'TEAM_MEMBER_ROLE_2' | translate }}</p>
+      </div>
+      <div class="col-md-4">
+        <h5>{{ 'TEAM_MEMBER_3' | translate }}</h5>
+        <p>{{ 'TEAM_MEMBER_ROLE_3' | translate }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kontakt -->
+  <div class="text-center my-5">
+    <h3 class="text-info">{{ 'CONTACT_US_TITLE' | translate }}</h3>
+    <p>{{ 'CONTACT_US_TEXT' | translate }}</p>
+    <button class="btn btn-primary" (click)="navigateToKontakt()">{{ 'CONTACT_BUTTON' | translate }}</button>
+  </div>
+</div>

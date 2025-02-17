@@ -1,0 +1,48 @@
+h1 {
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h3 {
+  margin-top: 1rem;
+}
+
+img.rounded-circle {
+  border: 3px solid #17a2b8; /* Bootstrap Info-Farbe */
+  padding: 5px;
+  transition: transform 0.3s ease;
+}
+
+img.rounded-circle:hover {
+  transform: scale(1.1); /* Vergrößert das Bild leicht beim Hover */
+}
+
+.container {
+  max-width: 900px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 25px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
