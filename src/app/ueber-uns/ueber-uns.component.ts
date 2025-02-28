@@ -17,11 +17,17 @@ export class UeberUnsComponent {
     this.currentLang = localStorage.getItem('language') || 'de';
     this.translate.use(this.currentLang);
 
-    // Aktualisiert den Text, wenn sich die Sprache ändert
     this.translate.onLangChange.subscribe((event) => {
-      console.log('Neue Sprache in Über Uns:', event.lang);
       this.currentLang = event.lang;
     });
+  }
+
+  navigateToVermieter(): void {
+    window.open('https://vermietsicher.de/vermietertipps#Mietpreis', '_blank');
+  }
+
+  navigateToMieter(): void {
+    window.open('https://www.studierendenwerke.de/beitrag/illustriertes-wohnheimwoerterbuch-3', '_blank');
   }
 
   navigateToKontakt(): void {

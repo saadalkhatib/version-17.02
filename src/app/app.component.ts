@@ -15,7 +15,7 @@ export class AppComponent {
     const browserLang = localStorage.getItem('language') || 'de';
     this.translate.use(browserLang);
 
-    // 🔥 WICHTIG: Überwache Sprachwechsel, um das ganze Layout zu aktualisieren
+    //  Überwache Sprachwechsel, um das ganze Layout zu aktualisieren
     this.translate.onLangChange.subscribe(() => {
       console.log('Sprache geändert, Seite wird aktualisiert!');
     });

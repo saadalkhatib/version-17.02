@@ -23,15 +23,14 @@
       <textarea class="form-control" id="nachricht" rows="5" placeholder="{{ 'MESSAGE_PLACEHOLDER' | translate }}"></textarea>
     </div>
 
-    <div class="form-check mb-3 d-flex align-items-start">
-      <input class="form-check-input mt-1 me-2" type="checkbox" id="datenschutz" required>
+    <div class="form-check mb-3">
+      <input class="form-check-input" type="checkbox" id="datenschutz" required>
       <label class="form-check-label" for="datenschutz">
         {{ 'PRIVACY_POLICY_TEXT' | translate }}
         <a href="#" class="text-primary text-decoration-underline">{{ 'PRIVACY_POLICY_LINK' | translate }}</a>
-        <br>
         {{ 'PRIVACY_POLICY_CONSENT' | translate }}
       </label>
-    </div>
+    </div>    
     
     
     <div class="text-center">

@@ -5,7 +5,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader, TranslateService } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { routes } from './app.routes'; 
-import { WohnplattformComponent } from './wohnplattform/wohnplattform.component'; // ✅ Standalone-Komponente bleibt!
+import { WohnplattformComponent } from './wohnplattform/wohnplattform.component'; //  Standalone-Komponente bleibt!
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -16,7 +16,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot(routes),
-    WohnplattformComponent,  // ✅ Jetzt hier importieren, da es eine Standalone-Komponente ist!
+    WohnplattformComponent,  //  Jetzt hier importieren, da es eine Standalone-Komponente ist!
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -25,6 +25,6 @@ export function HttpLoaderFactory(http: HttpClient) {
       }
     }),
   ],
-  providers: [TranslateService], // ✅ `TranslateService` als globalen Provider setzen
+  providers: [TranslateService], //  `TranslateService` als globalen Provider setzen
 })
 export class AppModule {}

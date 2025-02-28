@@ -28,6 +28,6 @@ export class LayoutComponent {
 
   changeLanguage(lang: string) {
     this.translate.use(lang);
-    localStorage.setItem('language', lang); // 🔥 Speichert die Sprache für zukünftige Besuche
+    localStorage.setItem('language', lang); //  Speichert die Sprache für zukünftige Besuche
   }
 }

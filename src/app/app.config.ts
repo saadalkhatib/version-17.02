@@ -5,7 +5,6 @@ import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-transla
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { routes } from './app.routes';
 
-// 🔥 Factory für `TranslateHttpLoader`
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -23,6 +22,6 @@ export const appConfig: ApplicationConfig = {
         },
       })
     ),
-    TranslateService, // 🛠️ WICHTIG: `TranslateService` wird jetzt korrekt initialisiert
+    TranslateService, 
   ],
 };

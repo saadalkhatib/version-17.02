@@ -18,6 +18,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('router-outlet')).toBeTruthy(); // Teste, ob die Komponente korrekt gerendert wird
+    expect(compiled.querySelector('router-outlet')).toBeTruthy(); 
   });
 });
